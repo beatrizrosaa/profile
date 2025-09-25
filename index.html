@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Pessoal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nude: {
+              50: '#fdf6f3',
+              100: '#faece6',
+              200: '#f5d7ce',
+              300: '#f0bfb2',
+              400: '#eaa99b',
+              500: '#e3937f',
+              600: '#d97c65',
+              700: '#b96454',
+              800: '#8d4d41',
+              900: '#6b3930',
+            },
+            rose: {
+              100: '#ffe4ec',
+              200: '#ffb8d2',
+              300: '#ff8ab8',
+              400: '#ff5c9e',
+              500: '#ff2e84',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-nude-100 min-h-screen">
+  <!-- Navbar -->
+  <nav class="w-full bg-nude-300 shadow-md py-4 px-6 flex justify-center fixed top-0 left-0 z-50">
+    <ul class="flex gap-8 font-semibold text-nude-900 text-lg">
+      <li><a href="#home" class="nav-link hover:text-rose-400 transition">Home</a></li>
+      <li><a href="#sobre" class="nav-link hover:text-rose-400 transition">Sobre</a></li>
+      <li><a href="#projetos" class="nav-link hover:text-rose-400 transition">Projetos</a></li>
+      <li><a href="#contato" class="nav-link hover:text-rose-400 transition">Contato</a></li>
+    </ul>
+  </nav>
+  <main class="pt-24 flex flex-col items-center">
+    <!-- Home -->
+    <section id="home" class="w-full max-w-xl bg-nude-50 rounded-xl shadow-lg p-8 mb-10 flex flex-col items-center">
+      <img src="images/sua-foto.jpg" alt="Foto de perfil" class="w-28 h-28 rounded-full border-4 border-nude-300 mb-4 shadow" />
+      <h1 class="text-3xl font-extrabold text-nude-900 mb-1">Seu Nome</h1>
+      <p class="text-rose-400 font-semibold mb-2">Sua Localização</p>
+      <p class="text-nude-700 mb-4 text-center">Breve descrição sobre você e sua atuação profissional.</p>
+      <div class="flex gap-4">
+        <a href="#" class="bg-rose-400 text-white px-4 py-2 rounded-lg font-medium hover:bg-rose-500 transition">GitHub</a>
+        <a href="#" class="bg-rose-400 text-white px-4 py-2 rounded-lg font-medium hover:bg-rose-500 transition">LinkedIn</a>
+        <a href="#" class="bg-rose-400 text-white px-4 py-2 rounded-lg font-medium hover:bg-rose-500 transition">Instagram</a>
+      </div>
+    </section>
+    <!-- Sobre -->
+    <section id="sobre" class="w-full max-w-xl bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+      <h2 class="text-2xl font-bold text-nude-900 mb-3">Sobre Mim</h2>
+      <p class="text-nude-700 leading-relaxed">Escreva aqui um pouco sobre sua trajetória, formação, paixões e habilidades. Destaque o que faz de você um(a) profissional único(a)!</p>
+    </section>
+    <!-- Projetos -->
+    <section id="projetos" class="w-full max-w-xl bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+      <h2 class="text-2xl font-bold text-nude-900 mb-6">Projetos</h2>
+      <div class="grid grid-cols-1 gap-6">
+        <div class="bg-nude-200 rounded-lg p-4 shadow flex flex-col">
+          <span class="text-rose-400 font-bold text-lg mb-1">Projeto 1</span>
+          <p class="text-nude-800 mb-2">Breve descrição do projeto, tecnologias usadas e objetivo.</p>
+          <a href="#" class="text-rose-500 font-semibold hover:underline">Ver no GitHub</a>
+        </div>
+        <div class="bg-nude-200 rounded-lg p-4 shadow flex flex-col">
+          <span class="text-rose-400 font-bold text-lg mb-1">Projeto 2</span>
+          <p class="text-nude-800 mb-2">Breve descrição do projeto, tecnologias usadas e objetivo.</p>
+          <a href="#" class="text-rose-500 font-semibold hover:underline">Ver no GitHub</a>
+        </div>
+        <!-- Adicione mais projetos conforme desejar -->
+      </div>
+    </section>
+    <!-- Contato -->
+    <section id="contato" class="w-full max-w-xl bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+      <h2 class="text-2xl font-bold text-nude-900 mb-3">Contato</h2>
+      <form class="flex flex-col gap-4">
+        <input type="text" placeholder="Seu nome" class="rounded-lg border border-nude-200 p-3 focus:outline-none focus:ring-2 focus:ring-rose-300" />
+        <input type="email" placeholder="Seu e-mail" class="rounded-lg border border-nude-200 p-3 focus:outline-none focus:ring-2 focus:ring-rose-300" />
+        <textarea placeholder="Sua mensagem" class="rounded-lg border border-nude-200 p-3 focus:outline-none focus:ring-2 focus:ring-rose-300"></textarea>
+        <button type="submit" class="bg-rose-400 text-white py-2 rounded-lg font-medium hover:bg-rose-500 transition">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    // SPA-like scroll and highlight nav
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = this.getAttribute('href').replace('#','');
+        document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
