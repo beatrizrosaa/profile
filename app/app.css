@@ -36,3 +36,10 @@ body {
     color-scheme: dark;
   }
 }
+
+/* Força hash change para Vercel - v2.0 */
+
+/* Classe adicional para forçar mudança no hash */
+.portfolio-force-update {
+  content: "v2.0";
+}
