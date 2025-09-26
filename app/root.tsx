@@ -18,11 +18,12 @@ export const links: Route.LinksFunction = () => [
 // O layout principal da sua aplicação
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <meta charSet="utf-8" />
-        <title>Portifólio - Beatriz Rosa</title>
+        <title>Beatriz Rosa - Portfólio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Portfólio de Beatriz Rosa - Engenharia da Computação e Ciência da Computação" />
         <Meta />
         <Links />
       </head>
