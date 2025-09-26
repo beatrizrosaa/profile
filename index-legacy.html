@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatriz Rosa - Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nude: {
+              50: '#fdf6f3',
+              100: '#faece6',
+              200: '#f5d7ce',
+              300: '#f0bfb2',
+              400: '#eaa99b',
+              500: '#e3937f',
+              600: '#d97c65',
+              700: '#b96454',
+              800: '#8d4d41',
+              900: '#6b3930',
+            },
+            rose: {
+              100: '#ffe4ec',
+              200: '#ffb8d2',
+              300: '#ff8ab8',
+              400: '#ff5c9e',
+              500: '#ff2e84',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hidden { display: none; }
+    .active-tab { color: #ff5c9e; border-bottom: 2px solid #ff5c9e; }
+  </style>
+</head>
+<body class="bg-nude-100 min-h-screen">
+  <!-- Navbar -->
+  <nav class="w-full bg-nude-300 shadow-md py-4 px-6 flex justify-between items-center fixed top-0 left-0 z-50">
+    <h3 class="font-bold text-xl text-nude-900">Beatriz Rosa</h3>
+    <ul class="flex gap-6 font-semibold text-nude-900 text-lg">
+      <li><a href="#" class="tab-link active-tab hover:text-rose-400 transition" data-tab="home">Home</a></li>
+      <li><a href="#" class="tab-link hover:text-rose-400 transition" data-tab="projetos">Projetos</a></li>
+      <li><a href="#" class="tab-link hover:text-rose-400 transition" data-tab="arquivos">Arquivos</a></li>
+      <li><a href="#" class="tab-link hover:text-rose-400 transition" data-tab="contato">Contato</a></li>
+    </ul>
+    <!-- Social Media Links -->
+    <div class="flex gap-3">
+      <a href="https://github.com/beatrizrosaa" target="_blank" class="hover:opacity-75 transition">
+        <svg class="w-6 h-6 text-nude-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/beatriz-rosa-almeida" target="_blank" class="hover:opacity-75 transition">
+        <svg class="w-6 h-6 text-nude-900" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:rosabeatriz438@yahoo.com.br" class="hover:opacity-75 transition">
+        <svg class="w-6 h-6 text-nude-900" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.36l9.615-6.54h.749c.904 0 1.636.733 1.636 1.637z"/></svg>
+      </a>
+    </div>
+  </nav>
+  <main class="pt-24 flex flex-col items-center min-h-screen px-4">
+    
+    <!-- Home Tab -->
+    <div id="home" class="tab-content w-full max-w-4xl">
+      <!-- Profile Section -->
+      <section class="bg-nude-50 rounded-xl shadow-lg p-8 mb-10 flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-shrink-0">
+          <img src="../Site-portifólio/perfil.jpg" alt="Beatriz Rosa" class="w-32 h-32 rounded-full border-4 border-nude-300 shadow" />
+        </div>
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl font-extrabold text-nude-900 mb-2">Beatrizzzzzzz Rosa de Almeida</h1>
+          <p class="text-rose-400 font-semibold mb-1">Engenharia da Computação - Senai Cimatec</p>
+          <p class="text-rose-400 font-semibold mb-1">Ciência da Computação - UFBA</p>
+          <p class="text-nude-700 mb-1">E-mail: rosabeatriz438@yahoo.com.br</p>
+          <p class="text-nude-700">Contato: (71) 98898-8992</p>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+        <h2 class="text-2xl font-bold text-nude-900 mb-6 text-center">É um prazer recebê-lo ao meu site!</h2>
+        <h3 class="text-xl font-semibold text-nude-900 mb-4 text-center">Explore à vontade e conheça minha trajetória.</h3>
+        
+        <div class="space-y-4 text-nude-700 leading-relaxed">
+          <p>Me chamo Beatriz Rosa e atualmente estou cursando Engenharia da Computação no Senai Cimatec e Ciência da Computação na UFBA – Este é um site desenvolvido por mim afim de compartilhar através dessa metalinguagem tudo que já aprendi.</p>
+          
+          <p>Meu curso me instiga a cada dia que passa, me vi imersa nas questões de sustentabilidade, e muito curiosa em como associar à tecnologia.</p>
+          
+          <p>Atualmente faço parte da Info Jr, empresa de juniores da UFBA, onde atuo no setor de Gestão de Pessoas e estou desenvolvendo minhas habilidades no Núcleo de Web. Nesse processo, desenvolvi habilidades com algumas ferramentas e frameworks: <span class="font-semibold text-rose-400">Node JS, Next.JS, HTML, CSS, TypeScript, Insomnia, Beekeeper, React, SQLite, Prisma, Prismic</span>. Além das linguagens que desenvolvi no meio acadêmico: <span class="font-semibold text-rose-400">Java, C, C++ e Python</span>.</p>
+          
+          <p>Extrapolando minha vida universitária, sou uma entusiasta das artes e dos esportes. Participo anualmente de eventos de dança para promover a cultura em Salvador, fortalecendo minha conexão com a comunidade. Tive a oportunidade de liderar projetos sociais na minha antiga escola, onde adquiri habilidades de comunicação com pais e alunos, coordenação de grupos e gestão colaborativa com colegas.</p>
+        </div>
+
+        <div class="bg-nude-200 rounded-lg p-4 mt-6 flex items-center gap-4">
+          <svg class="w-8 h-8 text-rose-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C3.71 7 1 9.71 1 12.9v.2C1 16.29 3.71 19 6.9 19H11v-1.9H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.2zM8 13h8v-2H8v2zm9.1-6H13v1.9h4.1c1.71 0 3.1 1.39 3.1 3.1v.2c0 1.71-1.39 3.1-3.1 3.1H13V17h4.1c3.19 0 5.9-2.71 5.9-5.9v-.2C23 7.71 20.29 5 17.1 5z"/>
+          </svg>
+          <div>
+            <a href="https://beatrizrosaa.github.io/beatrizrosaa/" target="_blank" class="text-rose-500 font-semibold hover:underline">
+              Link do site: https://beatrizrosaa.github.io/beatrizrosaa/
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Engagements Section -->
+      <section class="bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+        <h2 class="text-2xl font-bold text-nude-900 mb-4">Engajamento e Colaborações</h2>
+        <p class="text-nude-700 mb-6">Veja um pouco mais dos projetos que participo e lidero efetivamente.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-nude-200 rounded-lg p-6">
+            <img src="../Site-portifólio/gincana1.jpg" alt="Atividades Colaborativas" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-lg font-bold text-rose-400 mb-2">Atividades Colaborativas</h4>
+            <p class="text-nude-800">Desde a gestão financeira até a recreação infantil, nós, ex-alunos, nos reunimos anualmente para promover essa atividade aos estudantes. Ao longo de um mês, organizamos diversas ações que incentivam o engajamento social e proporcionam a todos a oportunidade de explorar o lado artístico.</p>
+          </div>
+          
+          <div class="bg-nude-200 rounded-lg p-6">
+            <img src="../Site-portifólio/infojr.jpg" alt="Info Jr" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-lg font-bold text-rose-400 mb-2">Info Jr</h4>
+            <p class="text-nude-800">A INFO JR é a empresa júnior do curso de Ciência da Computação da Universidade Federal da Bahia (UFBA). Trata-se de uma organização sem fins lucrativos, gerida por estudantes universitários, que oferece serviços de tecnologia e consultoria em áreas como desenvolvimento web, design de interfaces, marketing digital e soluções de TI.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Projetos Tab -->
+    <div id="projetos" class="tab-content hidden w-full max-w-4xl">
+      <section class="bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+        <h1 class="text-3xl font-bold text-nude-900 mb-4 text-center">Descubra minha criatividade em ação!</h1>
+        <p class="text-nude-700 mb-8 text-center">Aqui compartilho projetos que refletem minha paixão pela arte, dança e iniciativas sociais e colaborativas. Cada trabalho é uma expressão do meu desejo de conectar pessoas, criar impacto e explorar diferentes formas de expressão.</p>
+        
+        <!-- Projetos Sociais e Artísticos -->
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-nude-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-rose-400 mb-4">Compartilhando a Cultura da Dança</h4>
+            <img src="../Site-portifólio/danca1.jpg" alt="Dança" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-sm">Durante o mês da dança, a escola de dança à qual faço parte é convidada anualmente para apresentar coreografias de sala e performances de festivais passados em um shopping de grande fluxo em Salvador.</p>
+          </div>
+          
+          <div class="bg-nude-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-rose-400 mb-4">Doações e Diversão: Pelas Crianças</h4>
+            <img src="../Site-portifólio/social1.jpg" alt="Projeto Social" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-sm">O projeto envolve a arrecadação de doações de alimentos e itens de higiene, seguidas de pequenas reformas em creches para melhorar o ambiente das crianças.</p>
+          </div>
+          
+          <div class="bg-nude-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-rose-400 mb-4">Liderança e Criatividade na Dança</h4>
+            <img src="../Site-portifólio/coreografa1.jpg" alt="Coreografia" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-sm">Passei a coreografar performances com mais de 100 adolescentes, coordenando desde roteiro e coreografias até dinâmicas, áudio, iluminação e figurino.</p>
+          </div>
+        </div>
+
+        <!-- Projetos Técnicos -->
+        <h3 class="text-2xl font-bold text-nude-900 mb-6">Projetos Técnicos</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-nude-200 rounded-lg p-6 flex flex-col items-center">
+            <img src="../Site-portifólio/certificadoMFP.jpg" alt="Maratona Femina" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-center">Participei das duas edições da Maratona Femina de Programação da Unicamp na modalidade remota em 2023 e 2024.</p>
+          </div>
+          
+          <div class="bg-nude-200 rounded-lg p-6 flex flex-col items-center">
+            <img src="../Site-portifólio/foruflix.png" alt="ForuFlix" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-center">Desenvolvi durante um curso de Javascript uma página de streaming onde é possível assistir ao trailer dos filmes e séries e avaliá-los também.</p>
+          </div>
+          
+          <div class="bg-nude-200 rounded-lg p-6 flex flex-col items-center">
+            <img src="../Site-portifólio/jogodavelha.jpg" alt="Jogo da Velha" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-center">Em uma atividade da faculdade desenvolvi em 10 aulas uma base do jogo da velha utilizando C++.</p>
+          </div>
+          
+          <div class="bg-nude-200 rounded-lg p-6 flex flex-col items-center">
+            <img src="../Site-portifólio/forca2.png" alt="Jogo da Forca" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <p class="text-nude-800 text-center">Jogo da Forca com lista de animais com lógica e interface gráfica em TypeScript.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Arquivos Tab -->
+    <div id="arquivos" class="tab-content hidden w-full max-w-4xl">
+      <section class="bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+        <h1 class="text-3xl font-bold text-nude-900 mb-4 text-center">Explorando a teoria na prática!</h1>
+        <p class="text-nude-700 mb-8 text-center">Aqui você encontrará projetos acadêmicos que traduzem conceitos em soluções reais. Cada trabalho representa um capítulo da minha jornada em ciência e engenharia.</p>
+        
+        <div class="space-y-8">
+          <!-- Projeto 1: Artigo -->
+          <div class="bg-nude-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-rose-400 mb-4">Projeto 1: Artigo - ENFRENTANDO A CARÊNCIA TECNOLÓGICA PARA ALCANÇAR UM DESENVOLVIMENTO INDUSTRIAL LIMPO</h3>
+            <div class="flex items-center gap-4 mb-4">
+              <svg class="w-8 h-8 text-rose-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+              <a href="../Site-portifólio/Artigo.pdf" download class="text-rose-500 font-semibold hover:underline">Download do Artigo - PDF</a>
+            </div>
+            <p class="text-nude-800">Este artigo foi elaborado por mim e meus colegas com a seguinte tese: "Enfrentando a Carência Tecnológica para Alcançar um Desenvolvimento Industrial Limpo". Realizamos uma pesquisa aprofundada em artigos previamente publicados e exploramos a trajetória da Natura, uma empresa que integra sustentabilidade e crescimento de marca ao agregar valor através de seu posicionamento.</p>
+          </div>
+
+          <!-- Projeto 2: Protótipo de Dispenser -->
+          <div class="bg-nude-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-rose-400 mb-4">Projeto 2: Protótipo de Dispenser</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <img src="../Site-portifólio/prototipovirtual.jpg" alt="Protótipo Virtual" class="w-full h-48 object-cover rounded-lg" />
+              <video controls class="w-full h-48 rounded-lg">
+                <source src="../Site-portifólio/smartdispenser.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
+            <p class="text-nude-800 mt-4">A proposta busca minimizar erros de medicação, reduzir desperdícios, melhorar a rastreabilidade e o gerenciamento de estoque, além de aumentar a satisfação dos pacientes por meio de um atendimento personalizado e pontual. Com auxílio de um microcontrolador ESP32, células de carga, servo motor e um buzzer, faremos um dispositivo que atrelado a uma planilha excel será programado para entrega de remédios de forma personalizada seguindo os horários corretos.</p>
+          </div>
+
+          <!-- Projeto 3: E-commerce -->
+          <div class="bg-nude-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-rose-400 mb-4">Projeto 3: E-commerce</h3>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <img src="../Site-portifólio/pag1.jpg" alt="E-commerce Página 1" class="w-full h-32 object-cover rounded-lg" />
+              <img src="../Site-portifólio/pag2.jpg" alt="E-commerce Página 2" class="w-full h-32 object-cover rounded-lg" />
+              <img src="../Site-portifólio/pag3.jpg" alt="E-commerce Página 3" class="w-full h-32 object-cover rounded-lg" />
+            </div>
+            <p class="text-nude-800">Neste projeto de e-commerce, eu fui a responsável por todo o back-end, utilizando Node.js, SQLite e Prisma. A integração com o front-end em React e o gerenciamento de conteúdo por meio do Prismic garantiram uma experiência de compra eficiente e escalável. Testes de API foram realizados com Insomnia, enquanto Beekeeper facilitou a manipulação do banco de dados.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contato Tab -->
+    <div id="contato" class="tab-content hidden w-full max-w-xl">
+      <section class="bg-nude-50 rounded-xl shadow-lg p-8 mb-10">
+        <h2 class="text-2xl font-bold text-nude-900 mb-6 text-center">Entre em Contato</h2>
+        
+        <div class="mb-6 text-center">
+          <p class="text-nude-700 mb-2"><strong>E-mail:</strong> rosabeatriz438@yahoo.com.br</p>
+          <p class="text-nude-700 mb-4"><strong>Telefone:</strong> (71) 98898-8992</p>
+        </div>
+
+        <form class="flex flex-col gap-4">
+          <input type="text" placeholder="Seu nome" class="rounded-lg border border-nude-200 p-3 focus:outline-none focus:ring-2 focus:ring-rose-300" />
+          <input type="email" placeholder="Seu e-mail" class="rounded-lg border border-nude-200 p-3 focus:outline-none focus:ring-2 focus:ring-rose-300" />
+          <textarea placeholder="Sua mensagem" rows="5" class="rounded-lg border border-nude-200 p-3 focus:outline-none focus:ring-2 focus:ring-rose-300"></textarea>
+          <button type="submit" class="bg-rose-400 text-white py-3 rounded-lg font-medium hover:bg-rose-500 transition">Enviar Mensagem</button>
+        </form>
+      </section>
+    </div>
+
+  </main>
+  
+  <footer class="bg-nude-300 py-4 text-center text-nude-900 mt-10">
+    <p>&copy; 2024 Beatriz Rosa | Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    // Tab navigation functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabLinks = document.querySelectorAll('.tab-link');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      // Function to show a specific tab
+      function showTab(tabName) {
+        // Hide all tabs
+        tabContents.forEach(content => {
+          content.classList.add('hidden');
+        });
+        
+        // Remove active class from all links
+        tabLinks.forEach(link => {
+          link.classList.remove('active-tab');
+        });
+        
+        // Show selected tab
+        const selectedTab = document.getElementById(tabName);
+        if (selectedTab) {
+          selectedTab.classList.remove('hidden');
+        }
+        
+        // Add active class to selected link
+        const selectedLink = document.querySelector(`[data-tab="${tabName}"]`);
+        if (selectedLink) {
+          selectedLink.classList.add('active-tab');
+        }
+      }
+      
+      // Add click event listeners to tab links
+      tabLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const tabName = this.getAttribute('data-tab');
+          showTab(tabName);
+        });
+      });
+      
+      // Show home tab by default
+      showTab('home');
+    });
+  </script>
+</body>
+</html>
