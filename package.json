@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-  "build": "vite build",
+    "build": "vite build && node scripts/generate-index.js && xcopy public\\* build\\client\\ /E /Y /Q",
+    "build:vercel": "vite build && node scripts/generate-index.js && cp -r public/* build/client/",
     "start": "vite start",
     "typecheck": "react-router typegen && tsc"
   },
