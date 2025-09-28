@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
-    "build:vercel": "react-router build && node scripts/generate-index.js",
+    "build": "react-router build --mode=spa",
+    "build:vercel": "react-router build --mode=spa && node scripts/generate-index.js",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "react-router-serve ./build/client/index.html",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
