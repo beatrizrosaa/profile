@@ -23,7 +23,7 @@ if (fs.existsSync(manifestPath)) {
   const cssFile = rootEntry && rootEntry.css ? rootEntry.css[0] : '';
   const jsFile = entryClient ? entryClient.file : '';
   
-  // Gerar o HTML para SPA
+  // Gerar o HTML
   const html = `<!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -32,22 +32,9 @@ if (fs.existsSync(manifestPath)) {
     <title>Beatriz Rosa - Portfólio</title>
     <meta name="description" content="Portfólio de Beatriz Rosa - Engenharia da Computação e Ciência da Computação" />
     ${cssFile ? `<link rel="stylesheet" href="/${cssFile}" />` : ''}
-    <style>
-      #root {
-        min-height: 100vh;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-      }
-    </style>
   </head>
   <body>
-    <div id="root">
-      <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: system-ui;">
-        <div>Carregando...</div>
-      </div>
-    </div>
+    <div id="root"></div>
     ${jsFile ? `<script type="module" src="/${jsFile}"></script>` : ''}
   </body>
 </html>`;

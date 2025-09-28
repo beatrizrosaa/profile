@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && node scripts/generate-index.js && xcopy public\\* build\\client\\ /E /Y /Q",
-    "build:vercel": "vite build && node scripts/generate-index.js && cp -r public/* build/client/",
-    "start": "vite start",
+    "build": "react-router build",
+    "build:vercel": "react-router build && node scripts/generate-index.js",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {

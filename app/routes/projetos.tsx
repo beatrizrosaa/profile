@@ -1,9 +1,6 @@
-import Layout from "../components/Layout";
-
 export default function ProjetosPage() {
   return (
-    <Layout>
-      <div className="w-full max-w-4xl">
+    <div className="w-full max-w-4xl">
         <section className="bg-rose-100 rounded-xl shadow-lg p-8 mb-10">
           <h1 className="text-3xl font-bold text-rose-900 mb-4 text-center">
             Descubra minha criatividade em ação!
@@ -196,6 +193,5 @@ export default function ProjetosPage() {
           </div>
         </section>
       </div>
-    </Layout>
   );
 }

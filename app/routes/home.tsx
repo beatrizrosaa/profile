@@ -1,10 +1,6 @@
-import Layout from "../components/Layout";
-
-
 export default function HomePage() {
   return (
-    <Layout>
-      <div className="w-full max-w-4xl">
+    <div className="w-full max-w-4xl">
         {/* Profile Section */}
         <section className="bg-rose-100 rounded-xl shadow-lg p-8 mb-10 flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="flex-shrink-0 flex justify-center">
@@ -121,6 +117,5 @@ export default function HomePage() {
           </div>
         </section>
       </div>
-    </Layout>
   );
 }

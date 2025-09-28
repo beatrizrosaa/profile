@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Layout from "../components/Layout";
 
 export default function ContatoPage() {
   const [formData, setFormData] = useState({
@@ -24,8 +23,7 @@ export default function ContatoPage() {
   };
 
   return (
-    <Layout>
-      <div className="w-full max-w-xl">
+    <div className="w-full max-w-xl">
         <section className="bg-rose-100 rounded-xl shadow-lg p-8 mb-10">
           <h2 className="text-2xl font-bold text-rose-900 mb-6 text-center">
             Entre em Contato
@@ -77,6 +75,5 @@ export default function ContatoPage() {
           </form>
         </section>
       </div>
-    </Layout>
   );
 }
