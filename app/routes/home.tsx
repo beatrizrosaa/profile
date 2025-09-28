@@ -60,7 +60,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* <div className="bg-rose-200 rounded-lg p-4 mt-6 flex items-center gap-4">
+          <div className="bg-rose-200 rounded-lg p-4 mt-6 flex items-center gap-4">
             <svg className="w-8 h-8 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
               <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C3.71 7 1 9.71 1 12.9v.2C1 16.29 3.71 19 6.9 19H11v-1.9H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.2zM8 13h8v-2H8v2zm9.1-6H13v1.9h4.1c1.71 0 3.1 1.39 3.1 3.1v.2c0 1.71-1.39 3.1-3.1 3.1H13V17h4.1c3.19 0 5.9-2.71 5.9-5.9v-.2C23 7.71 20.29 5 17.1 5z"/>
             </svg>
@@ -74,7 +74,7 @@ export default function HomePage() {
                 Link do site: https://beatrizrosaa.github.io/beatrizrosaa/
               </a>
             </div>
-          </div> */}
+          </div>
         </section>
 
         {/* Engagements Section */}
