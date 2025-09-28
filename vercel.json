@@ -1,8 +1,17 @@
 {
   "buildCommand": "npm run build:vercel",
   "outputDirectory": "build/client",
+  "installCommand": "npm install",
   "framework": null,
+  "functions": {
+    "build/server/index.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/build/server/index.js"
+    }
   ]
 }

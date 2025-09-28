@@ -5,28 +5,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
-    reactRouter({
-      ssr: false,
-      future: {
-        unstable_singleFetch: true,
-      },
-    }),
+    reactRouter(),
     tailwindcss(), 
     tsconfigPaths()
   ],
-  build: {
-    outDir: "build/client",
-    assetsDir: "assets",
-    emptyOutDir: true,
-    manifest: true,
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
-  },
-  base: "/",
   server: {
     port: 5173,
     host: true,
